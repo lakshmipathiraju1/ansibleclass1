@@ -2,8 +2,8 @@
 - hosts : all
   become : yes
   tasks : 
-  - name : install git,tree,wget into nodes
-    apt :
+  - name : install git, tree, wget, on node
+    apt : 
      name : "{{ item }}"
      state : present
     with items :
